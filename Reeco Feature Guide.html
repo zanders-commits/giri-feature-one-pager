@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reeco — Feature Guide</title>
+<link rel="preload" href="fonts/Inter-v20-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="feature-guide.css">
+</head>
+<body>
+
+<!-- ===================== STICKY RAIL NAV ===================== -->
+<nav class="railnav" aria-label="Sections">
+  <a href="#cover" data-rail><span class="bub"></span><span class="lbl">Cover</span></a>
+  <a href="#index" data-rail><span class="bub"></span><span class="lbl">Modules</span></a>
+  <a href="#m01" data-rail><span class="bub"></span><span class="lbl">01 · Purchasing &amp; Receiving</span></a>
+  <a href="#m02" data-rail><span class="bub"></span><span class="lbl">02 · AP Automation</span></a>
+  <a href="#m03" data-rail><span class="bub"></span><span class="lbl">03 · Inventory</span></a>
+  <a href="#m04" data-rail><span class="bub"></span><span class="lbl">04 · Culinary</span></a>
+  <a href="#insights" data-rail><span class="bub"></span><span class="lbl">Insights</span></a>
+</nav>
+
+<div class="doc">
+
+  <!-- ============================================================
+       COVER
+       ============================================================ -->
+  <section class="page cover" id="cover" data-screen-label="Cover">
+    <div class="cover-top">
+      <img src="assets/reeco-logo-white.svg" alt="Reeco">
+      <div class="cover-meta">Feature guide · 2026</div>
+    </div>
+
+    <div class="cover-body">
+      <p class="cover-eyebrow">Hotel procure-to-pay platform</p>
+      <h1>Back-of-house <span class="navy">visibility</span> &amp; control.</h1>
+      <p class="cover-sub">Reeco clears the clouds across orders, inventory, recipes, and invoices — so teams can act in real time, not after the fact.</p>
+
+      <div class="cover-modules">
+        <div class="cover-mod"><span class="n">01</span><span class="l">Purchasing &amp; Receiving</span></div>
+        <div class="cover-mod"><span class="n">02</span><span class="l">AP Automation</span></div>
+        <div class="cover-mod"><span class="n">03</span><span class="l">Inventory Management</span></div>
+        <div class="cover-mod"><span class="n">04</span><span class="l">Culinary</span></div>
+      </div>
+    </div>
+
+    <div class="cover-cloud-wrap">
+      <svg class="cloud" viewBox="0 0 1440 150" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path fill="#ffffff" d="M0,150 L0,96 C110,96 150,30 280,40 C400,49 432,86 560,82 C690,78 724,26 864,38 C986,48 1014,90 1152,80 C1284,70 1322,38 1440,50 L1440,150 Z"></path>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       MODULE INDEX
+       ============================================================ -->
+  <section class="page" id="index" data-screen-label="Module index">
+    <div class="page-pad">
+      <p class="eyebrow">Four modules</p>
+      <h2 class="rc-display" style="margin:14px 0 26px;color:var(--navy-900);font-size:44px;letter-spacing:-0.02em;">Modules</h2>
+
+      <div class="index-list">
+        <a class="index-row reveal" href="#m01">
+          <span class="num">01</span>
+          <div><p class="nm">Purchasing &amp; Receiving</p><p class="ds">Visibility and control from order creation to delivery confirmation.</p></div>
+          <span class="arrow"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </a>
+        <a class="index-row reveal" href="#m02">
+          <span class="num">02</span>
+          <div><p class="nm">AP Automation</p><p class="ds">Make invoice processing fast, accurate, and audit-ready.</p></div>
+          <span class="arrow"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </a>
+        <a class="index-row reveal" href="#m03">
+          <span class="num">03</span>
+          <div><p class="nm">Inventory Management</p><p class="ds">Real-time inventory visibility with a mobile-first experience.</p></div>
+          <span class="arrow"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </a>
+        <a class="index-row reveal" href="#m04">
+          <span class="num">04</span>
+          <div><p class="nm">Culinary</p><p class="ds">Connect menus to recipes with clear visibility into food costs.</p></div>
+          <span class="arrow"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       MODULE 01 — PURCHASING & RECEIVING
+       ============================================================ -->
+  <section class="page" id="m01" data-screen-label="Module 01 — Purchasing &amp; Receiving">
+    <div class="module-head">
+      <div class="opener-num">01</div>
+      <h2>Purchasing &amp; Receiving</h2>
+      <p class="tag">Visibility and control from order creation to delivery confirmation.</p>
+    </div>
+    <div class="page-pad">
+      <div class="feat-block">
+        <div class="feat-groups">
+          <div class="feat-group">
+            <p class="gh">Purchasing</p>
+            <ul class="feat-list">
+              <li><span class="tick">✓</span><span>All vendors in one place — no punchouts</span></li>
+              <li><span class="tick">✓</span><span>Existing contract prices, delivery days, and cut-off times honored</span></li>
+              <li><span class="tick">✓</span><span>GPO compliance tracking</span></li>
+              <li><span class="tick">✓</span><span>Supplier performance and pricing trend visibility</span></li>
+              <li><span class="tick">✓</span><span>HSM Catalog Integration</span></li>
+              <li><span class="tick">✓</span><span>Purchase from all suppliers in a single checkout experience</span></li>
+              <li><span class="tick">✓</span><span>Mobile-friendly purchasing from any device</span></li>
+              <li><span class="tick">✓</span><span>Order guides that include multiple suppliers</span></li>
+              <li><span class="tick">✓</span><span>Search across similar products for cost optimization</span></li>
+              <li><span class="tick">✓</span><span>AI ordering that remembers user preferences to make routine orders simple</span></li>
+            </ul>
+          </div>
+          <div class="feat-group">
+            <p class="gh">Controls &amp; approvals</p>
+            <ul class="feat-list">
+              <li><span class="tick">✓</span><span>Configurable multi-level approval workflows (property → corporate)</span></li>
+              <li><span class="tick">✓</span><span>Route approvals based on % of budget, dollar amount, supplier, and user</span></li>
+              <li><span class="tick">✓</span><span>Real-time budget visibility linked to GL structure</span></li>
+            </ul>
+          </div>
+          <div class="feat-group">
+            <p class="gh">Receiving</p>
+            <ul class="feat-list">
+              <li><span class="tick">✓</span><span>Mobile receiving workflow</span></li>
+              <li><span class="tick">✓</span><span>Capture missing items, damages, substitutions, and credits in real time</span></li>
+              <li><span class="tick">✓</span><span>Automatic inventory updates on successful receipt</span></li>
+              <li><span class="tick">✓</span><span>Discrepancy tracking and supplier dispute management</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       MODULE 02 — AP AUTOMATION
+       ============================================================ -->
+  <section class="page" id="m02" data-screen-label="Module 02 — AP Automation">
+    <div class="module-head">
+      <div class="opener-num">02</div>
+      <h2>AP Automation</h2>
+      <p class="tag">Make invoice processing fast, accurate, and audit-ready.</p>
+    </div>
+    <div class="page-pad">
+      <div class="feat-block">
+        <div class="feat-groups">
+          <div class="feat-group">
+            <p class="gh">Capture</p>
+            <ul class="feat-list">
+              <li><span class="tick">✓</span><span>Unique email address per property for vendors to send invoices directly into Reeco</span></li>
+              <li><span class="tick">✓</span><span>Upload paper invoices by taking pictures with Reeco's mobile app</span></li>
+              <li><span class="tick">✓</span><span>Automatic extraction of all invoice data including line items</span></li>
+              <li><span class="tick">✓</span><span>Duplicate invoice detection and flagging</span></li>
+              <li><span class="tick">✓</span><span>Capture vendor statements and identify any missing invoices</span></li>
+            </ul>
+          </div>
+          <div class="feat-group">
+            <p class="gh">Coding &amp; allocation</p>
+            <ul class="feat-list">
+              <li><span class="tick">✓</span><span>AI-powered GL code assignment — learns and improves over time</span></li>
+              <li><span class="tick">✓</span><span>Split allocations across multiple cost centers</span></li>
+              <li><span class="tick">✓</span><span>Custom coding rules by vendor, category, or property</span></li>
+            </ul>
+          </div>
+          <div class="feat-group">
+            <p class="gh">Accounting sync</p>
+            <ul class="feat-list">
+              <li><span class="tick">✓</span><span>Real-time API sync with M3</span></li>
+              <li><span class="tick">✓</span><span>Budget-vs-actual visibility pulled directly from accounting</span></li>
+            </ul>
+          </div>
+          <div class="feat-group">
+            <p class="gh">Approve &amp; audit</p>
+            <ul class="feat-list">
+              <li><span class="tick">✓</span><span>Approval workflows routed by amount, vendor, or department</span></li>
+              <li><span class="tick">✓</span><span>Three-way matching: PO vs. receipt vs. invoice</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       MODULE 03 — INVENTORY MANAGEMENT
+       ============================================================ -->
+  <section class="page" id="m03" data-screen-label="Module 03 — Inventory Management">
+    <div class="module-head">
+      <div class="opener-num">03</div>
+      <h2>Inventory Management</h2>
+      <p class="tag">Real-time inventory visibility with a mobile-first experience.</p>
+    </div>
+    <div class="page-pad">
+      <div class="feat-block">
+        <div class="feat-groups">
+          <div class="feat-group">
+            <p class="gh">Counting</p>
+            <ul class="feat-list">
+              <li><span class="tick">✓</span><span>Count from any mobile device</span></li>
+              <li><span class="tick">✓</span><span>Keep counting even without a connection — counts sync automatically once you're back online</span></li>
+              <li><span class="tick">✓</span><span>Multiple inventory counts can run simultaneously across your team</span></li>
+              <li><span class="tick">✓</span><span>Assign an audit owner and counters per storeroom — assigned counters get notified and see only their areas of focus</span></li>
+              <li><span class="tick">✓</span><span>Set audit frequency per storeroom — daily, weekly, bi-weekly, monthly, or quarterly</span></li>
+              <li><span class="tick">✓</span><span>Storeroom-based audits</span></li>
+              <li><span class="tick">✓</span><span>Beverage and alcohol tracking</span></li>
+            </ul>
+          </div>
+          <div class="feat-group">
+            <p class="gh">Tracking</p>
+            <ul class="feat-list">
+              <li><span class="tick">✓</span><span>Transfer items between storerooms — on-hand value updates in both locations automatically</span></li>
+              <li><span class="tick">✓</span><span>Waste and spoilage tracking</span></li>
+              <li><span class="tick">✓</span><span>Always know what was delivered since the last count</span></li>
+            </ul>
+          </div>
+          <div class="feat-group">
+            <p class="gh">Valuation &amp; insight</p>
+            <ul class="feat-list">
+              <li><span class="tick">✓</span><span>Automatic value calculations using real purchase prices</span></li>
+              <li><span class="tick">✓</span><span>Variance analysis based on inventory counts vs. theoretical quantities from sales data</span></li>
+              <li><span class="tick">✓</span><span>Storeroom value trend — shows value change % vs. the prior audit, color-coded to flag deviations</span></li>
+              <li><span class="tick">✓</span><span>Order to PAR — generate a replenishment order directly from a completed audit based on PAR levels</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       MODULE 04 — CULINARY
+       ============================================================ -->
+  <section class="page" id="m04" data-screen-label="Module 04 — Culinary">
+    <div class="module-head">
+      <div class="opener-num">04</div>
+      <h2>Culinary</h2>
+      <p class="tag">Connect menus to recipes with clear visibility into food costs.</p>
+    </div>
+    <div class="page-pad">
+      <div class="feat-block">
+        <div class="feat-groups">
+          <div class="feat-group">
+            <p class="gh">Recipes</p>
+            <ul class="feat-list">
+              <li><span class="tick">✓</span><span>Create and manage standardized recipes and sub-recipes</span></li>
+              <li><span class="tick">✓</span><span>Upload an existing recipe file — AI converts it into a structured recipe with ingredients, quantities, and instructions automatically</span></li>
+              <li><span class="tick">✓</span><span>Step-by-step cooking instructions for consistent kitchen execution</span></li>
+              <li><span class="tick">✓</span><span>Flexible units of measurement — AI understands real kitchen conversions and recalculates cost live when you change the UoM</span></li>
+              <li><span class="tick">✓</span><span>Print-friendly recipe cards for kitchen teams</span></li>
+              <li><span class="tick">✓</span><span>Allergen and nutrition tagging</span></li>
+            </ul>
+          </div>
+          <div class="feat-group">
+            <p class="gh">Costing &amp; margins</p>
+            <ul class="feat-list">
+              <li><span class="tick">✓</span><span>Recipe costs update in real time as ingredient prices change</span></li>
+              <li><span class="tick">✓</span><span>Ingredient price history — see price trends over time directly within the recipe</span></li>
+              <li><span class="tick">✓</span><span>Multi-component dishes — link multiple sub-recipes to a single menu item</span></li>
+              <li><span class="tick">✓</span><span>Dish-level cost-vs.-net-sales comparison</span></li>
+              <li><span class="tick">✓</span><span>Cost alerts when ingredient prices change</span></li>
+              <li><span class="tick">✓</span><span>POS sync — menu items mapped directly to recipe costs</span></li>
+            </ul>
+          </div>
+          <div class="feat-group">
+            <p class="gh">Menus</p>
+            <ul class="feat-list">
+              <li><span class="tick">✓</span><span>Menus page synced to your POS — every menu item, its linked recipe, units sold, and food cost % in one view</span></li>
+              <li><span class="tick">✓</span><span>Date-range filter on menu performance — analyze food cost over any time window</span></li>
+              <li><span class="tick">✓</span><span>Food cost % color coding — instant visual signal for items above your target margin</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       INSIGHTS
+       ============================================================ -->
+  <section class="page" id="insights" data-screen-label="Insights">
+    <div class="page-pad">
+      <h2 class="rc-display" style="margin:0 0 26px;color:var(--navy-900);font-size:44px;letter-spacing:-0.02em;">Insights</h2>
+
+      <div class="insight-grid">
+        <div class="insight-card reveal">
+          <span class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect width="7" height="9" x="3" y="3" rx="1"/><rect width="7" height="5" x="14" y="3" rx="1"/><rect width="7" height="9" x="14" y="12" rx="1"/><rect width="7" height="5" x="3" y="16" rx="1"/></svg></span>
+          <h3>Executive dashboards</h3>
+          <p>KPIs across all four modules.</p>
+        </div>
+        <div class="insight-card reveal">
+          <span class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v16a2 2 0 0 0 2 2h16"/><path d="M18 17V9M13 17V5M8 17v-3"/></svg></span>
+          <h3>Spend analytics</h3>
+          <p>By supplier, category, property, or period.</p>
+        </div>
+        <div class="insight-card reveal">
+          <span class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/><path d="M8 12h.01M12 12h.01M16 12h.01"/></svg></span>
+          <h3>AI Chat analytics</h3>
+          <p>Natural-language queries on your data.</p>
+        </div>
+        <div class="insight-card reveal">
+          <span class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M7 10l5 5 5-5M12 15V3"/></svg></span>
+          <h3>CSV / Excel exports</h3>
+          <p>For finance and operations workflows.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="docfoot">
+    <img src="assets/reeco-logo-primary-green.svg" alt="Reeco">
+    <a href="https://reeco.com">reeco.com</a>
+  </div>
+
+</div>
+
+<script>
+  // ---- scroll reveal ----
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  // ---- rail nav active state ----
+  const railLinks = [...document.querySelectorAll('.railnav a[data-rail]')];
+  const targets = railLinks.map(a => document.querySelector(a.getAttribute('href'))).filter(Boolean);
+  const navIo = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        const id = '#' + e.target.id;
+        railLinks.forEach(a => a.classList.toggle('active', a.getAttribute('href') === id));
+      }
+    });
+  }, { threshold: 0.4 });
+  targets.forEach(t => navIo.observe(t));
+</script>
+
+</body>
+</html>
